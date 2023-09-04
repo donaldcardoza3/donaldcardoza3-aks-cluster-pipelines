@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: donaldcardozadonaldcardozaaksclusterpipelines 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: donaldcardozadonaldcardozaaksclusterpipelines
+  template:
+    metadata:
+      labels:
+        app: donaldcardozadonaldcardozaaksclusterpipelines 
+    spec:
+      containers:
+        - name: donaldcardozadonaldcardozaaksclusterpipelines 
+          image: aksacrdonald.azurecr.io/donaldcardozadonaldcardozaaksclusterpipelines
+          ports:
+          - containerPort: 80
